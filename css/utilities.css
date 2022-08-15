@@ -30,3 +30,19 @@
     border-color: var(--primary);
     color: var(--primary);
 }
+
+.btnSecondry{
+    background: transparent;
+    color:var(--primary);
+    border-color: var(--primary);
+}
+.btnSecondry:hover{
+    background: var(--primary);
+    color: var(--black);
+}
+.flex1{
+    flex: 1;
+}
+.justifyCenter{
+    justify-content: center;
+}

@@ -18,24 +18,25 @@ body{
     font-family: sans-serif;
 }
 header{
+    margin-top: 1rem;
     background-color: var(--black);
-    height: 100px;
+    margin-bottom: 2rem;
 }
 
-.container{
+header .container{
     max-width: 1152px;
-    padding:0 15px;
-    margin:0 auto;    
+    padding:0 1rem;
+    text-align: center;
+    font-size: medium;  
 }
 
 .branding{
-    
-    padding:10px 0 0 10px;
+    padding-left: 4rem;
     
 }
 
 header nav{
-    padding:2rem 0;
+    padding:3rem 0;
 }
 
 header nav .branding{
@@ -52,16 +53,116 @@ header nav .left a:hover{
     color:var(--yellow);
 }
 
-.home{
-    margin-top: 5rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 25rem;
-    padding-right: 10rem;
-    background-color: var(--light);
-    height: 700px;
-    width: 2000px;
+.rafel .home{
+    background-color: var(--black);
+    
+}
+ 
+.rafel .home .left img{
+    width: 450px;
+    height: 800PX;
 }
 
+.rafel .home .right{
+    color: var(--white);
+    text-align:left;  
+    padding-right: 10rem;
+    
+}
 
+.rafel .home .right h6{
+    color: var(--primary);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    padding-right: 3rem;
+}
 
+.rafel .home .right h2{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 0.3rem;
+}
+.rafel .home .right h2 span{
+    color: var(--primary);
+}
+
+.rafel .home .right p{
+    line-height: 1.5;
+    margin-bottom: 0.3rem;
+    text-align: justify;
+}
+
+.technology{
+    margin-top:2rem;
+    background-color: var(--light);
+}
+.sectionHeading{
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.technology .container .sectionHeading{
+    padding-top: 3rem;
+    text-decoration:dotted;
+}
+
+.technology .container p{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.technology .container .cardWrapper{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.technology .container .cardWrapper .card img{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.technology .container .cardWrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+}
+
+.technology .container .cardWrapper .card{
+    background: var(--white);
+    padding: 2rem 2rem;
+    padding-bottom: 0;
+    position: relative;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.technology .container .cardWrapper .card h2{
+    line-height: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.technology .container .cardWrapper .card p{
+    line-height: 1.5rem;
+}
+
+.technology .container .cardWrapper .card:hover{
+    background: var(--black);
+}
+
+.technology .container .cardWrapper .card:hover h2{
+    color: var(--yellow);
+}
+
+.technology .container .cardWrapper .card:hover p{
+    color: var(--light);
+}
