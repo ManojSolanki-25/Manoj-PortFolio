@@ -1,0 +1,67 @@
+@import 'utilities.css';
+
+:root{
+    --black:#000000;
+    --white:#ffffff;
+    --primary:#3dcfd3;
+    --light:#f2f2f2;
+    --red:#e83845;
+    --yellow:#ffce30;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smothing:antialiased;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    background-color: var(--black);
+    height: 100px;
+}
+
+.container{
+    max-width: 1152px;
+    padding:0 15px;
+    margin:0 auto;    
+}
+
+.branding{
+    
+    padding:10px 0 0 10px;
+    
+}
+
+header nav{
+    padding:2rem 0;
+}
+
+header nav .branding{
+    margin-right: 5rem;
+}
+header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a:hover{
+    color:var(--yellow);
+}
+
+.home{
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 25rem;
+    padding-right: 10rem;
+    background-color: var(--light);
+    height: 700px;
+    width: 2000px;
+}
+
+
+
