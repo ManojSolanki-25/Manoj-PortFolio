@@ -7,6 +7,10 @@
     --light:#f2f2f2;
     --red:#e83845;
     --yellow:#ffce30;
+    --black1:#202625;
+}
+html{
+    scroll-behavior: smooth;
 }
 *{
     padding: 0;
@@ -36,7 +40,7 @@ header .container{
 }
 
 header nav{
-    padding:3rem 0;
+    padding:2rem 0;
 }
 
 header nav .branding{
@@ -60,13 +64,13 @@ header nav .left a:hover{
  
 .rafel .home .left img{
     width: 450px;
-    height: 800PX;
+    height: 700PX;
 }
 
 .rafel .home .right{
     color: var(--white);
     text-align:left;  
-    padding-right: 10rem;
+    padding-right: 1rem;
     
 }
 
@@ -75,12 +79,15 @@ header nav .left a:hover{
     font-size: 1rem;
     margin-bottom: 0.5rem;
     padding-right: 3rem;
+    font-family: poppins,sans-serif;
+    text-decoration: underline;
 }
 
 .rafel .home .right h2{
     font-size: 2rem;
     font-weight: 100;
     margin-bottom: 0.3rem;
+    font-family: 'Lato', sans-serif;
 }
 .rafel .home .right h2 span{
     color: var(--primary);
@@ -95,6 +102,8 @@ header nav .left a:hover{
 .technology{
     margin-top:2rem;
     background-color: var(--light);
+    height: 900px;
+    
 }
 .sectionHeading{
     color: var(--primary);
@@ -110,11 +119,17 @@ header nav .left a:hover{
 .technology .container p{
     text-align: center;
     margin-bottom: 5rem;
+    font-family: poppins,sans-serif;
+}
+
+.technology .container h1{
+    font-family: 'lato',sans-serif;
 }
 
 .technology .container .cardWrapper{
     text-align: center;
     padding-bottom: 4rem;
+    height: 500px;
 }
 
 .technology .container .cardWrapper .card img{
@@ -142,6 +157,8 @@ header nav .left a:hover{
     position: relative;
     text-align: center;
     transition: all .3s ease;
+    height: 18rem;
+    
 }
 
 .technology .container .cardWrapper .card h2{
@@ -166,3 +183,139 @@ header nav .left a:hover{
 .technology .container .cardWrapper .card:hover p{
     color: var(--light);
 }
+
+.education{
+    background-color: var(--light);
+    margin-top: 2rem;
+    height: 38rem;
+    width: 100%;
+}
+
+.education .container{
+    text-align: center;
+    padding-top: 3rem;
+    line-height: 2rem;
+}
+
+.education .container h1{
+    margin-top: 00.5rem;
+    margin-bottom: 0.7rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.education .container .cardWrapper{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 4rem;
+    padding-left: 15rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+.education .container p{
+    text-decoration-line: underline;
+    font-family: 'poppins',sans-serif;
+}
+
+.education .container .cardWrapper .card{
+    background-color: var(--white);
+    height: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.education .container .cardWrapper .card:hover{
+    color: var(--white);
+    background-color: var(--black1);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.education .container .cardWrapper .card img{
+    height: 65px;
+    width: 100px;
+    padding-right: 1rem;
+    position: absolute;
+    top: -50%;
+    left: -5%;
+}
+
+.education .container .cardWrapper .card h2{
+    color: aquamarine;
+    padding-right: 1rem;   
+}
+
+.footer{
+    background-color:var(--white);
+    
+}
+
+.footer .container{
+    margin-bottom: 3rem;
+}
+
+.footer .container h2{
+    padding-top: 3rem;
+    text-align: center;
+    color: var(--primary);
+    font-family: 'Lato', sans-serif;
+}
+
+.footer .container p{
+    text-align: center;
+    line-height: 2rem;
+    font-family: poppins,sans-serif;    
+}
+
+.footer .box{
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border: var(--primary) solid;
+}
+
+.footer .box a{
+    text-align: center;
+    color: var(--black1);
+}
+
+.footer .box .gmailDistance{
+    line-height: 2rem;
+}
+
+.footer .box .image{
+    height: 50px;
+    width: 50px;
+    display: block; 
+    backface-visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.footer .box .table {
+    border-collapse: separate;
+    border-spacing: 15px 10px;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+  }
+
+.footer .box .table th:hover{
+    background-color: var(--black1);
+}
+
+.footer .box .table th:hover a{
+    color: var(--light);
+}
+
+.footer .box .table .aText{
+    text-align: center;
+}
+
+
+
